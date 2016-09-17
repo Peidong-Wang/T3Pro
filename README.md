@@ -28,7 +28,7 @@ There is nothing modified by T3Pro itself. All modifications are made by oysttye
 
 For uninstallation, you may simply `rm ~/.oysttyerkey` and `rm ~/.oysttyerrc` (if you set up this configuration file, which is highly recommended).
 
-After deleting the configuration files, you may simply delete the source code folder of T3Pro.
+After deleting the configuration files, you may simply delete T3Pro source code folder.
 
 ## To Do
 
