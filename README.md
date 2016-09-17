@@ -5,11 +5,12 @@ T3Pro is based on oysttyer. The idea is to use a child Twitter account to send d
 
 ## Install
 
-1. Configure oysttyer following the instructions on [http://oysttyer.github.io/docs/userGuide.html#commands](http://oysttyer.github.io/docs/userGuide.html#commands)
-2. Add the RECEIVER in t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
-3. `chmod u+x t3pro` (Grant execution privilege to t3pro.)
-4. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
-5. `source ~/.bash_profile` or `source ~/.profile`.
+1. Create a new Twitter account (child account). Let the parent accound and the child account follow each other.
+2. Configure oysttyer on the child account following the instructions on [http://oysttyer.github.io/docs/userGuide.html#commands](http://oysttyer.github.io/docs/userGuide.html#commands)
+3. Add RECEIVER in t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
+4. `chmod u+x t3pro` (Grant execution privilege to t3pro. "u" means only you can execute T3Pro. "+x" means granting execution privilege.)
+5. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
+6. `source ~/.bash_profile` or `source ~/.profile`.
 
 ## Test
 
