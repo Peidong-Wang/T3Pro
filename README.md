@@ -25,7 +25,7 @@ T3Pro adds configuration files entirely in your own home directory. In another w
 
 There is nothing modified by T3Pro itself. All modifications are made by oysttyer.
 
-For uninstallation, you may simply `rm ~/.oysttyerkey` and `rm ~/.osyttyerrc` (if you set up this configuration).
+For uninstallation, you may simply `rm ~/.oysttyerkey` and `rm ~/.oysttyerrc` (if you set up this configuration file, which is highly recommended).
 
 After deleting the configuration files, you may simply delete the source code folder of T3Pro.
 
@@ -38,4 +38,4 @@ After deleting the configuration files, you may simply delete the source code fo
 
 oysttyer uses Floodgap Free Software License.
 
-I further restricted T3Pro to be under GNU 3 License.
+I further restrict T3Pro to be under GNU 3 License.
