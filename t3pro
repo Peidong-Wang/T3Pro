@@ -1,0 +1,32 @@
+#!/bin/bash
+
+RECEIVER=
+
+T3TERPRO_LOG=".T3terPro_out_$(date +%Y%m%d-%H:%M:%S-%T)_PID$$"
+
+$@ 2>&1 | tee $T3TERPRO_LOG
+
+T3TERPRO_LOG_TAIL=`tail --lines=10 $T3TERPRO_LOG`
+T3TERPRO_COMMAND="/dm $RECEIVER Server:\n"$HOSTNAME"\nCommand:\n"$@"\nOutput:\n"$T3TERPRO_LOG_TAIL
+
+perl ./oysttyer.pl -runcommand="$T3TERPRO_COMMAND"
+
+# comment the command in the following line to keep output log for later reference
+
+rm $T3TERPRO_LOG
+
+# Uncomment the following code for a more robust mailpro_out_PID clean function. (In case something unexpected happens while doing "rm mailpro_out_'$$'".)
+
+# if [ -f mailpro_out_* ];
+#   then
+#   for file_name in [$(ls mailpro_out_*)]:
+#   do
+#     IFS='_' read -ra ADDR <<< file_name
+#     if [! kill -0 ${ADDR[2]}];
+#       then rm file_name
+#     fi
+#   done
+# fi
+
+exit 0
+
