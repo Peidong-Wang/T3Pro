@@ -39,4 +39,4 @@ After deleting the configuration files, you may simply delete T3Pro source code 
 
 oysttyer uses Floodgap Free Software License.
 
-I further restrict T3Pro to be under GPL 3.0 License.
+I further restrict T3Pro to be under GNU GPL 3.0 License.
