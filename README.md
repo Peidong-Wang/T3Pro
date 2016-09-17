@@ -6,7 +6,7 @@ T3Pro is based on oysttyer. The idea is to use a child Twitter account to send d
 ## Install
 
 1. Create a new Twitter account (child account). Let the parent accound and the child account follow each other.
-2. Configure oysttyer on the child account following the instructions on [http://oysttyer.github.io/docs/userGuide.html#apikey](http://oysttyer.github.io/docs/userGuide.html#apikey)
+2. Configure oysttyer on the child account following the instructions on [http://oysttyer.github.io/docs/userGuide.html#apikey](http://oysttyer.github.io/docs/userGuide.html#apikey). An exeption is in the 3rd step. I suggest the Name to be "T3Pro (YourCoolTwitterHandle)", Description to be "A Command Line Tool Notifying the User When A Program Finishes Using Twitter Direct Message" and Website to be "https://github.com/pozhijisi/T3Pro".
 3. Add RECEIVER in t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
 4. `chmod u+x t3pro` (Grant execution privilege to t3pro. "u" means only you can execute T3Pro. "+x" means granting execution privilege.)
 5. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
