@@ -5,11 +5,12 @@ T3Pro is based on oysttyer. The idea is to use a child Twitter account to send d
 
 ## Install
 
-1. Configure oysttyer following the instructions on [http://oysttyer.github.io/docs/userGuide.html#commands](http://oysttyer.github.io/docs/userGuide.html#commands)
-2. Add the RECEIVER in t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
-3. `chmod u+x t3pro` (Grant execution privilege to t3pro.)
-4. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
-5. `source ~/.bash_profile` or `source ~/.profile`.
+1. Create a new Twitter account (child account). Let the parent accound and the child account follow each other.
+2. Configure oysttyer on the child account following the instructions on [http://oysttyer.github.io/docs/userGuide.html#apikey](http://oysttyer.github.io/docs/userGuide.html#apikey). An exception is in the 3rd step. I suggest the Name to be "T3Pro (YourCoolTwitterHandle)", Description to be "A Command Line Tool Notifying the User When A Program Finishes Using Twitter Direct Message" and Website to be "https://github.com/pozhijisi/T3Pro".
+3. Add RECEIVER in the 3rd line of the t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, so I need to add wang_7642 here.)
+4. `chmod u+x t3pro` (Grant execution privilege to t3pro. "u" means only you can execute T3Pro. "+x" means granting execution privilege.)
+5. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
+6. `source ~/.bash_profile` or `source ~/.profile`.
 
 ## Test
 
@@ -27,7 +28,7 @@ There is nothing modified by T3Pro itself. All modifications are made by oysttye
 
 For uninstallation, you may simply `rm ~/.oysttyerkey` and `rm ~/.oysttyerrc` (if you set up this configuration file, which is highly recommended).
 
-After deleting the configuration files, you may simply delete the source code folder of T3Pro.
+After deleting the configuration files, you may simply delete T3Pro source code folder.
 
 ## To Do
 
@@ -38,4 +39,4 @@ After deleting the configuration files, you may simply delete the source code fo
 
 oysttyer uses Floodgap Free Software License.
 
-I further restrict T3Pro to be under GNU 3 License.
+I further restrict T3Pro to be under GPL 3.0 License.
