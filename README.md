@@ -1,12 +1,12 @@
 # T3Pro
 T3Pro: A Command Line Tool Notifying the User When A Program Finishes Using Twitter Direct Message
 
-T3Pro is based on oysttyer. The idea is to use a child Twitter account to send direct message to the parent (main) account. If the parent account allows notifications sent by the child account, such a system can be used as a tool reminding the user when a program finishes.
+T3Pro is based on oysttyer. The idea is to use a child Twitter account to send direct message to the parent (main) account. If the parent account allows notifications sent by the child account, such a system can be used as a tool reminding the user when a program finishes. oysttyer is used to control the child account. Notifications will be received in the parent (main) account.
 
 ## Install
 
 1. Configure oysttyer following the instructions on [http://oysttyer.github.io/docs/userGuide.html#commands](http://oysttyer.github.io/docs/userGuide.html#commands)
-2. Add the RECEIVER in t3pro script. (For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
+2. Add the RECEIVER in t3pro script. (This is the parent (main) account. For example my Twitter identifier is @wang_7642, I need to add wang_7642 here.)
 3. `chmod u+x t3pro` (Grant execution privilege to t3pro.)
 4. Add the path of t3pro to ~/.bash_profile or ~/.profile, according to your platform.
 5. `source ~/.bash_profile` or `source ~/.profile`.
